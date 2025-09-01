@@ -1,21 +1,13 @@
 .container-style{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
 }
 
 .container-style-two{
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    padding: 40px 0;
-    gap: 140px;
-}
-
-.information{
-    width: 500px;
-    padding: 50px 0;
+    padding:  24px 12px;
 }
 
 .title-style{
@@ -23,42 +15,120 @@
     line-height: 28px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 10px 0;
+    text-align: center;
 }
 
 .about{
     font-size: 18px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 500;
+    text-align: justify;
     padding: 10px 0;
 }
 
+.text-box{
+    padding: 20px 0;
+}
+
+.btn{
+    text-align: center;
+}
+
 .model{
-    width: 500px;
-    padding: 10px 0;
+    width: 100%;
+    height: 50%;
+    box-shadow: 10px 15px 35px rgba(9, 2, 74, 0.3);
 }
 
 .main-model{
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 
 .container-ia{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     gap: 10px;
-    padding-bottom: 50px ;
+    padding: 24px 12px;
+    flex-wrap: wrap;
 }
 
 .item{
-    width: 210px;
-    height: 210px;
-    overflow: hidden;
+    width: 90px;
+    height: 100px;
+    box-shadow: 5px 5px 5px rgba(2, 1, 10, 0.3);
 }
 
 .model-chart{
     width: 100%;
-    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+@media screen and (min-width:540px){
+    .item{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:744px){
+}
+
+@media screen and (min-width:1200px){
+    .container-style-two{
+        display: flex;
+        padding:30px 12px ;
+        gap: 50px;
+        flex-direction: row-reverse;
+    }
+
+    .information{
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .title-style{
+        text-align: left;
+        padding-bottom: 8px ;
+    }
+
+    .text-box{
+        padding: 28px 0;
+    }
+
+    .about{
+        text-align: unset;
+        padding: 10px 0;
+    }
+
+    .btn{
+        text-align: unset;
+    }
+
+    .model{
+        width: 50%;
+
+        /* height: 100%; */
+        /* padding: 10px 0; */
+    }
+
+    .main-model{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .item{
+        width: 230px;
+    }
+
+    .model-chart{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

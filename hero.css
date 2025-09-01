@@ -1,53 +1,84 @@
 .hero-section{
     width: 100%;
-    height:calc(100vh);
+    height: 100vh;
     background-image: url(image/bg-hero.jpg);
-    background-repeat: no-repeat;
-    background-size:100%; 
-    overflow: hidden; 
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
 }
 
 .hero-flex{
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-end;
-    height: 100vh;
-    width: 100%;
 }
 
 .title-box{
-    width: 400px;
+    max-width: 400px;
+    width: calc(100% - 32px);
+    height: 100vh;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .title{
-    font-size: 60px;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: 900;
-    line-height: 64px;
-    color: #282626;
-    padding: 6px 0;
-}
-
-.param{
-    font-size: 16px;
-    line-height: 20px;
-    padding: 6px 0;
-}
-
-.btn{
-    width: 400px;
-    padding: 6px 0;
-}
-
-.btn-main{
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    padding: 12px 40px;
-    background-color: #282628;
     color: #ffffff;
 }
 
+.param{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    padding: 20px 0px;
+    color: #ffffff;
+}
+
+.btn{
+    padding: 20px 0;
+}
+
+.btn-main{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 24px;
+    background-color: #2c2a2a;
+    color: #ffffff;
+    outline: none;
+    border: none;
+}
+
+@media screen and (min-width:744px){
+    .title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .title-box{ 
+        margin-right: unset;
+        margin-left: auto;
+        text-align: left;
+    }
+
+    .title{
+        font-size: 48px;
+        line-height: 52px;
+    }
+    
+    .param{
+        text-align: left;
+    }
+
+    .btn{
+        align-self: start;
+    }
+}
